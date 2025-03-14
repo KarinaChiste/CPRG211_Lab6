@@ -2,7 +2,7 @@
 
 namespace Lab6
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -16,7 +16,7 @@ namespace Lab6
             Event output = JsonSerializer.Deserialize<Event>(data);
             Console.WriteLine(output);
 
-
+            myEvent.ReadFromFile();
             
         }
     }
